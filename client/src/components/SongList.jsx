@@ -7,6 +7,7 @@ class SongList extends React.Component {
   }
 
   render() {
+    const key = []
     const songComponents = this.props.songs.map(function (song, index) {
       return (
         <SongElement key={ index } songName={ song['im:name'].label } artist={ song['im:artist'].label } ></SongElement>
