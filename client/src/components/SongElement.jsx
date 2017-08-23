@@ -3,9 +3,11 @@ import React from 'react';
 class SongElement extends React.Component {
   render() {
     return (
-      <div>
-          <li> { this.props.artist } — { this.props.songName } </li>
-      </div>
+      <tr>
+        <td> { this.props.index } </td>
+        <td>{ this.props.artist }  </td>
+        <td> { this.props.songName } </td>
+      </tr>
     )
   }
 }
